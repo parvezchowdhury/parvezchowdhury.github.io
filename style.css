@@ -1,194 +1,287 @@
-/*
-theme name: PRS Friends WP theme
-version:1.0
-author: Parvez Chowdhury
-author URI:http://www.facebook.com/profile.php?id=100008594590572
-description:this is our WP theme just for learning
 
-*/
-
-
-
-
-
-
-
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-html, body{
-	margin:0;
-	padding:0;
-}
+*{margin:0;padding:0}
 body{
-	font-family: 'Roboto', sans-serif;
+	font-family:sans-sarif, Arial !important;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
-.clearfix:before, .clearfix:after{
-	display:table;
-	content:"";
+a{
+	text-decoration:none;
 }
-.clearfix:after{
-	clear:both;
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
-/* Main Body Structure */
+p{
+	line-height:150%;
+	margin-bottom:2em;
+}
+.fix{
+	overflow:hidden;
+}
+.container_full{
+	width:100%;
+}
 .container{
-	width:960px;
-	margin:0 auto;
-	padding:0 15px 0 15px;
-}
-
-/* Site Header */
-header.main-header{
-	border-bottom:1px solid #067092;
-	padding-top:20px;
-}
-header.main-header h1 a{
-	color:#067092;
-	text-decoration:none;
-} 
-header.main-header h1{
-	margin:0;
-}
-header.main-header h3{
-	font-style:italic;
-	margin-top:0;
-}
-
-/* Site Navigation */
-.main-header nav{
-	margin-top:30px;
-}
-.main-menu ul{
-	margin:0;
-	padding:0;
-}
-.main-menu ul:before, .main-menu ul:after{
-	content:"";
-	display:table;
-}
-.main-menu ul:after{
-	clear:both;
-}
-.main-menu ul li{
-	list-style:none;
-	float:left;
-	margin-right:10px;
-}
-.main-menu ul li a{
-	padding:10px 20px;
+	width:980px;
 	display:block;
-	text-decoration:none;
-	border:1px solid #067092;
-	border-radius: 5px 5px 0 0;
-	border-bottom:none;
-	color:#000;
+	margin:0 auto;
 }
-.main-menu ul li a:hover{
-	background:#067092;
+.header_bg{
+	background:#292929;
+}
+#header .logo_left{
+	float:left;
+}
+#header .logo_left h1{
+	font-family:lato;
+	font-weight:bold;
+	font-size:40px;
 	color:#fff;
+	padding-top:30px;
 }
-/*Site Content*/
-.content_wrapper{
+#header nav{
+	float:right;
+}
+#header>nav #menu{
+	list-style:none;
+}
+#header>nav #menu li{
+	float:left;
+	border-right:1px solid #1E1E1E;
 	
+}
+#header>nav #menu li:first-child{
+	border-left:1px solid #1E1E1E;
+	
+}
+#header>nav #menu li a{
+	display:block;
+	color:#fff;
+	font-family:lato;
+	font-weight:bold;
+	font-size:16px;
+	padding:50px 30px;
+	border-bottom:5px solid #1E1E1E;
+}
+#header>nav #menu li a:hover{
+	border-bottom:5px solid #41C84E;
+	color:#41C84E;
+}
+#header>nav #menu li.active a{
+	border-bottom:5px solid #41C84E;
+	color:#41C84E;
+}
+.content_wrapper_bg{
+	border-top:5px solid #1E1E1E;
+	margin-top:-5px;
+	border-bottom:1px solid #E1E0E0;
+}
+.content_wrapper{
+	border-right:1px solid #E1E0E0;
+	border-left:1px solid #E1E0E0;
+	overflow:hidden;
+	padding-top:75px;
 }
 .left_content{
 	float:left;
-	width:65%;
-	margin-right:1%;
+	width:620px;
+	margin-right:70px;
 }
-.content_wrapper > .clear {
-    clear:both;
-    line-height:0;
+.left_content .single_post_wrapper{
+	overflow:hidden;
+	margin-bottom:80px;
 }
-
-/* Site Sidebar */
-
-
-.sidebar{
-	float:left;
-	width:34%;
-
+.left_content .single_post_wrapper img{
+	width:620px;
+	height:308px;
 }
-.sidebar .sidebar_single_area h2{
-	color:red;
+.left_content .single_post_wrapper h2{
+	font-family:lato;
+	font-weight:bold;
+	font-size:28px;
+	color:#4f4e4e;
+	text-transform:uppercase;
+	padding-left:15px;
+	padding-top:15px;
 }
-.sidebar .sidebar_single_area{
-	border-bottom:2px solid #ddd;
-	
-}
-
-
-.sidebar .sidebar_single_area ul li a{
-	text-decoration:none;
-	color:blue;
-	
+.left_content .single_post_wrapper p{
+	font-family:lato;
+	font-size:16px;
+	color:#606060;
+	padding-left:15px;
+	padding-top:30px;
 }
 
-
-
-
-
-
-
-
-/* Site Footer */
-.site-footer{
-	margin:10px 0;
-	border:1px solid #067092;
-	padding-top:5px;
-	
-	
+.left_content .single_post_wrapper .continue_r{
+    color: #c2c1c1;
+    font-family: lato;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 35px;
+    border: 1px solid #C2C2C2;
+    border-radius: 26px;
+    display: inline-block;
+    margin-left: 20px;
 }
-.site-footer>p{
-	float:left;
-	margin:0;
-	padding:0;
-}
-.site-footer p a{
-	color:#067092;
-	text-decoration:none;
-}
-#footer_nav{
+
+#sidebar{
 	float:right;
+	width:280px;
 }
-#footer_nav ul{
-	margin:0;
-	padding:0;
+#sidebar .single_sidebar{
+	margin-bottom:40px;
+	overflow:hidden;
 }
-#footer_nav ul li{
+#sidebar .single_sidebar h2{
+    font-family: lato;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-left: 3px solid #41C84E;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #6c6969;
+	margin-bottom:15px;
+}
+#sidebar .single_sidebar p{
+    font-family: lato;
+    font-size: 16px;
+    color: #737373;
+	width:95%;
+	margin-left:10px;
+}
+#sidebar .single_sidebar .search_box{
+	float:right;
+	width:269px;
+	height:50px;
+	border:1px solid #E1E0E0;
+	border-right:none;	
+}
+.email_submit{
+	position:relative;
+}
+.email_submit input{
+	width:278px;
+	height:50px;	
+	border:1px solid #E1E0E0;	
+}
+.email_submit input[type="submit"]{
+    float: right;
+    background: url(img/search_icon.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    text-indent: -999999px;
+    border: none;
+    top: 15px;
+    right: 20px;
+	cursor:pointer;
+}
+
+.single_sidebar input[type="text"], .single_sidebar input[type="email"]{
+	padding-left:10px;
+}
+
+.content_bottom{
+	border-top:1px solid #E1E0E0;
+	border-left:1px solid #E1E0E0;
+	border-right:1px solid #E1E0E0;
+	padding:25px 0;
+	overflow:hidden;
+	text-transform:uppercase;
+	
+}
+.content_bottom .previous{
+	color:#818181;
+    font-family: lato;
+    font-size: 18px;
+	font-weight:bold;
 	float:left;
+	margin-left:20px;
+	
+}
+.content_bottom .next{
+	color:#818181;
+    font-family: lato;
+    font-size: 18px;
+	font-weight:bold;
+	float:right;
+margin-right:20px;	
+}
+
+#footer{
+	text-align:center;
+	margin-top:50px;
+	margin-bottom:50px;
+	
+}
+#footer>h1{
+    font-family: lato;
+    font-size: 40px;
+	font-weight:bold;	
+	color:#292929;
+}
+#footer>p{
+    font-family: lato;
+    font-size: 13px;	
+	color:#a6a6a6;
+}
+#footer .social_area{
+	
+}
+
+#footer .social_area ul{
 	list-style:none;
-	padding:1px 20px;
-	border-right:1px solid #ddd;
 }
-#footer_nav ul li:last-child{
-	border-right:none;
+#footer .social_area ul li{
+	display:inline-block;
+	margin:0 10px;
 }
-#footer_nav ul li a{
-	color:#2c7092;
-	text-decoration:none;
+#footer .social_area ul li.facebook a{
+	display:block;
+	width:40px;
+	height:40px;
+	background:url(img/fb1.png) no-repeat;
+	-webkit-transition:all 0.5s ease;
+	transition:all 0.5s ease;
 }
-
-.post_meta{
-	border:1px solid #ddd;
-	padding: 10px;
-}
-.home_ar_wrap{
-	border-bottom:1px solid #ddd;
-	margin-bottom:25px;
-	padding-bottom:25px;
-}
-.home_ar_wrap:last-child{
-	border-bottom:none;
-	margin-bottom:0px;
-	padding-bottom:0px;
-}
-.featured_img img.wp-post-image {
-	width:100%;
-	height:auto;
-	padding-bottom:10px;
+#footer .social_area ul li.facebook:hover a{
+	background:url(img/fb.png) no-repeat;
 }
 
 
+#footer .social_area ul li.twitter a{
+	display:block;
+	width:40px;
+	height:40px;
+	background:url(img/tw.png) no-repeat;
+	-webkit-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+#footer .social_area ul li.twitter:hover a{
+	background:url(img/tw1.png) no-repeat;
+}
 
-/*
-	Tutorial By- http://ITBari.com, All Rights Reserved
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
