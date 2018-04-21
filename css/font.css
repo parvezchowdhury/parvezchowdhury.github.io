@@ -1,0 +1,7 @@
+@font-face{
+	font-family:"lato";
+	src:(../font/lato.eot) format(eot),
+	(../font/lato.ttf) format(ttf),
+	(../font/lato.svg) format(svg),
+	(../font/lato.woff) format(wof);
+}
